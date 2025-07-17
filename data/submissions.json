@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "first_name": "Isuru",
+        "last_name": "Kumarasiri",
+        "email": "12isurukumarasiri@gmail.com",
+        "phone": "0702007415",
+        "comments": "bnvmnn",
+        "submitted_at": "2025-07-17 08:22:24"
+    },
+    {
+        "first_name": "Isuru",
+        "last_name": "Kumarasiri",
+        "email": "12isurukumarasiri@gmail.com",
+        "phone": "0702007415",
+        "comments": "bnvmnn",
+        "submitted_at": "2025-07-17 09:30:41"
+    }
+]

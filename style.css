@@ -34,7 +34,7 @@ img {
    HEADER
 ---------------------------- */
 .header {
-  background-color: #000000;
+  background-color: #0F0F0F;
   padding: 20px 0;
   position: sticky;
   top: 0;
@@ -90,6 +90,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.6);
@@ -199,6 +200,21 @@ img {
   color: #ff4081;
 }
 
+/* Contact layout row */
+.contact-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.contact-row form,
+.contact-row .map {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Form */
 form {
   background: #1e1e1e;
   padding: 30px;
@@ -244,10 +260,15 @@ form button:hover {
   background: #e73370;
 }
 
-.map iframe {
-  border-radius: 8px;
+/* Map */
+.contact-row .map {
+  height: 400px;
+}
+
+.contact-row .map iframe {
   width: 100%;
-  height: 300px;
+  height: 100%;
+  border-radius: 8px;
   border: 0;
 }
 
@@ -300,5 +321,13 @@ form button:hover {
 
   .favorites h2 {
     font-size: 24px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .contact-row .map {
+    height: 300px;
   }
 }
