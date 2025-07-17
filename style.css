@@ -85,7 +85,6 @@ img {
   cursor: pointer;
 }
 
-
 /* ---------------------------
    HERO SECTION
 ---------------------------- */
@@ -96,8 +95,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 }
-
 
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.6);
@@ -105,16 +104,27 @@ img {
   text-align: center;
 }
 
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
 
 /* ---------------------------
    INTRO SECTION
 ---------------------------- */
 .intro {
-  padding: 60px 0;
+  padding: 100px 0; /* increased top/bottom spacing */
   text-align: center;
+  background-color: #121212; /* optional background to ensure visibility */
 }
 
+
 .intro h2 {
+    text-align: center;
   font-size: 32px;
   margin-bottom: 20px;
   color: #ff4081;
@@ -129,6 +139,10 @@ img {
 /* ---------------------------
    FAVORITES SECTION
 ---------------------------- */
+.favorites {
+  padding: 0px 0;
+}
+
 .favorites-header {
   display: flex;
   justify-content: space-between;
@@ -150,25 +164,6 @@ img {
   border-radius: 5px;
   flex: 1;
   max-width: 300px;
-}
-
-.favorites {
-  padding: 60px 0;
-}
-
-.favorites h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-#searchInput {
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 30px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
 }
 
 .static-cards,
@@ -207,6 +202,39 @@ img {
 .card p {
   font-size: 14px;
   margin-top: 10px;
+}
+
+/* ---------------------------
+   FAVORITE BUTTONS
+---------------------------- */
+.fav-btn {
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.add-btn {
+  background-color: #ff4081;
+  color: #ffffff;
+}
+
+.add-btn:hover {
+  background-color: #e73370;
+}
+
+.remove-btn {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.remove-btn:hover {
+  background-color: #ff3b3b;
 }
 
 /* ---------------------------
@@ -345,6 +373,16 @@ form button:hover {
     font-size: 24px;
   }
 
+  .favorites-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .favorites-header input {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .contact-row {
     flex-direction: column;
   }
@@ -352,37 +390,4 @@ form button:hover {
   .contact-row .map {
     height: 300px;
   }
-  /* ---------------------------
-   FAVORITE BUTTONS
----------------------------- */
-.fav-btn {
-  margin-top: 15px;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s;
-  display: inline-block;
-}
-
-.add-btn {
-  background-color: #ff4081;
-  color: #ffffff;
-}
-
-.add-btn:hover {
-  background-color: #e73370;
-}
-
-.remove-btn {
-  background-color: #444444;
-  color: #ffffff;
-}
-
-.remove-btn:hover {
-  background-color: #ff3b3b;
-}
-
 }
