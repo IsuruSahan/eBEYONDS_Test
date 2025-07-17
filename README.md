@@ -64,7 +64,7 @@ project-folder/
 ---
 
 ## 📥 Installation
-
+Start XAMPP Localhost server
 ```bash
 git clone https://github.com/yourusername/tv-favorites-app.git
 cd tv-favorites-app
