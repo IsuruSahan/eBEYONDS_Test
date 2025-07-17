@@ -1,6 +1,4 @@
-/* ---------------------------
-   RESET & BASE STYLES
----------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -30,9 +28,7 @@ img {
   margin: auto;
 }
 
-/* ---------------------------
-   HEADER
----------------------------- */
+
 .header {
   background-color: #0F0F0F;
   padding: 20px 0;
@@ -85,9 +81,7 @@ img {
   cursor: pointer;
 }
 
-/* ---------------------------
-   HERO SECTION
----------------------------- */
+
 .hero {
   height: 60vh;
   background: url('assets/hero.jpg') center center/cover no-repeat;
@@ -113,13 +107,11 @@ img {
   font-size: 18px;
 }
 
-/* ---------------------------
-   INTRO SECTION
----------------------------- */
+
 .intro {
-  padding: 100px 0; /* increased top/bottom spacing */
+  padding: 100px 0; 
   text-align: center;
-  background-color: #121212; /* optional background to ensure visibility */
+  background-color: #121212;
 }
 
 
@@ -136,9 +128,7 @@ img {
   font-size: 18px;
 }
 
-/* ---------------------------
-   FAVORITES SECTION
----------------------------- */
+
 .favorites {
   padding: 0px 0;
 }
@@ -204,9 +194,7 @@ img {
   margin-top: 10px;
 }
 
-/* ---------------------------
-   FAVORITE BUTTONS
----------------------------- */
+
 .fav-btn {
   margin-top: 15px;
   padding: 10px 16px;
@@ -237,9 +225,7 @@ img {
   background-color: #ff3b3b;
 }
 
-/* ---------------------------
-   CONTACT SECTION
----------------------------- */
+
 .contact {
   padding: 60px 0;
 }
@@ -250,7 +236,7 @@ img {
   color: #ffffff;
 }
 
-/* Contact layout row */
+
 .contact-row {
   display: flex;
   gap: 30px;
@@ -264,7 +250,7 @@ img {
   min-width: 300px;
 }
 
-/* Form */
+
 form {
   background: #1e1e1e;
   padding: 30px;
@@ -310,7 +296,7 @@ form button:hover {
   background: #e73370;
 }
 
-/* Map */
+
 .contact-row .map {
   height: 400px;
 }
@@ -322,9 +308,7 @@ form button:hover {
   border: 0;
 }
 
-/* ---------------------------
-   FOOTER
----------------------------- */
+
 .footer {
   background: #000000;
   text-align: center;
@@ -333,9 +317,7 @@ form button:hover {
   color: #aaa;
 }
 
-/* ---------------------------
-   RESPONSIVE STYLES
----------------------------- */
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;

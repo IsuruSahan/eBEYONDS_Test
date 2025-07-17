@@ -1,4 +1,4 @@
-// ========== HAMBURGER MENU TOGGLE ==========
+
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
 });
 
 
-// ========== TV MAZE API SEARCH ==========
+
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
 const favoritesGrid = document.getElementById('favoritesGrid');
@@ -54,7 +54,7 @@ function displayResults(shows) {
 }
 
 
-// ========== ADD TO FAVORITES ==========
+
 function addToFavorites(show) {
   if (favorites.find(fav => fav.id === show.id)) return;
 

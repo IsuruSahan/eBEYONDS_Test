@@ -5,7 +5,7 @@
       <input type="text" id="searchInput" placeholder="Search for a show..." />
     </div>
 
-    <!-- Static Cards and Dynamic Results will follow -->
+
 
 
     <!-- Static Cards -->
