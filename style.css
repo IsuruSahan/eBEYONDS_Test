@@ -1,0 +1,304 @@
+/* ---------------------------
+   RESET & BASE STYLES
+---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------------------------
+   HEADER
+---------------------------- */
+.header {
+  background-color: #000000;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.logo span {
+  color: #ff4081;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ff4081;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------------------------
+   HERO SECTION
+---------------------------- */
+.hero {
+  height: 60vh;
+  background: url('assets/hero.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* ---------------------------
+   INTRO SECTION
+---------------------------- */
+.intro {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ff4081;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* ---------------------------
+   FAVORITES SECTION
+---------------------------- */
+.favorites {
+  padding: 60px 0;
+}
+
+.favorites h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.static-cards,
+.results-grid,
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  border-radius: 6px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* ---------------------------
+   CONTACT SECTION
+---------------------------- */
+.contact {
+  padding: 60px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff4081;
+}
+
+form {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button {
+  background: #ff4081;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #e73370;
+}
+
+.map iframe {
+  border-radius: 8px;
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+/* ---------------------------
+   FOOTER
+---------------------------- */
+.footer {
+  background: #000000;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* ---------------------------
+   RESPONSIVE STYLES
+---------------------------- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1001;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .intro h2 {
+    font-size: 26px;
+  }
+
+  .favorites h2 {
+    font-size: 24px;
+  }
+}
