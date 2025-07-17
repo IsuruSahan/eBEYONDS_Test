@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container">
+  <div class="container header-container">
     <div class="logo">Movie<span>Library</span></div>
     <nav class="nav">
       <ul class="nav-links">

@@ -42,11 +42,11 @@ function displayResults(shows) {
     const summary = show.summary ? show.summary.replace(/<[^>]+>/g, '') : 'No description available.';
 
     card.innerHTML = `
-      <img src="${image}" alt="${show.name}" />
-      <h3>${show.name}</h3>
-      <p>${summary.substring(0, 100)}...</p>
-      <button class="add-btn">+ Add to Favorites</button>
-    `;
+  <img src="${image}" alt="${show.name}" />
+  <h3>${show.name}</h3>
+  <p>${summary.substring(0, 100)}...</p>
+  <button class="fav-btn add-btn">+ Add to Favorites</button>
+`;
 
     card.querySelector('.add-btn').addEventListener('click', () => addToFavorites(show));
     searchResults.appendChild(card);
@@ -78,11 +78,11 @@ function renderFavorites() {
     const summary = show.summary ? show.summary.replace(/<[^>]+>/g, '') : 'No description available.';
 
     card.innerHTML = `
-      <img src="${image}" alt="${show.name}" />
-      <h3>${show.name}</h3>
-      <p>${summary.substring(0, 100)}...</p>
-      <button class="remove-btn">× Remove</button>
-    `;
+  <img src="${image}" alt="${show.name}" />
+  <h3>${show.name}</h3>
+  <p>${summary.substring(0, 100)}...</p>
+  <button class="fav-btn remove-btn">× Remove</button>
+`;
 
     card.querySelector('.remove-btn').addEventListener('click', () => removeFromFavorites(show.id));
     favoritesGrid.appendChild(card);
